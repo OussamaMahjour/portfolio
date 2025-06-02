@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme {
+   --color-background-dark:#0E1216;
+   --font-Inter:"Inter";
+   --color-special-text-dark:#80aad4;
+   --z-back:0;
+   --z-middle:10;
+   --z-front:100;
+}
+
+body{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
