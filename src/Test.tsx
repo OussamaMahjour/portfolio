@@ -1,12 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
-import { ParticlesProps } from "react-tsparticles";
+// import { Container } from "@tsparticles/engine";
 
 
-type Props = {
-    className:string
-}
 
 export default function ParticaleGenerator(){
   const [init, setInit] = useState(false);
@@ -20,11 +17,12 @@ export default function ParticaleGenerator(){
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  // const particlesLoaded = (container:Container | undefined):Promise<void> => {
+  //   console.log(container);
 
-  const options = useMemo(
+  // };
+
+  const options = useMemo< any>(
     () => ({
       background: {
         color: {
@@ -106,7 +104,7 @@ export default function ParticaleGenerator(){
        
             <Particles
                 id="tsparticles"
-                particlesLoaded={particlesLoaded}
+                // particlesLoaded={particlesLoaded}
                 options={options}
             />
    

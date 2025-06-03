@@ -1,11 +1,9 @@
-import { useEffect } from 'react';
 import './App.css'
 import Cursor from './Components/Cursor';
 import Gretting from './Sections/Gretting';
 import ParticaleGenerator from './Test';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import About from './Sections/About';
 
 
 function App() {
